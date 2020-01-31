@@ -6,23 +6,26 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>有关Arrays方面的实用功能 | Personal blog of MisterTian</title>
+  <title>不忍直视的辣鸡游戏 | Personal blog of MisterTian</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1、复制数组Java标准库提供的 static 方法 System.arraycopy()，使用该方法复制数组比较方便，并且对所有类型做了重载。">
+  <meta name="description" content="参考博文：https:&#x2F;&#x2F;blog.csdn.net&#x2F;qq_42370146&#x2F;article&#x2F;details&#x2F;84842168?utm_source&#x3D;app 过年实在是无聊，就试着学学用Java做做界面，最大的收获就是了解使用.css文件美化界面，虽然美化过后还是丑，但是进步一点是一点吧。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="有关Arrays方面的实用功能">
-<meta property="og:url" content="http://yoursite.com/2020/01/26/%E6%9C%89%E5%85%B3Arrays%E6%96%B9%E9%9D%A2%E7%9A%84%E5%AE%9E%E7%94%A8%E5%8A%9F%E8%83%BD/index.html">
+<meta property="og:title" content="不忍直视的辣鸡游戏">
+<meta property="og:url" content="http://yoursite.com/2020/01/31/%E6%8B%BC%E5%9B%BE%E5%B0%8F%E6%B8%B8%E6%88%8F/index.html">
 <meta property="og:site_name" content="Personal blog of MisterTian">
-<meta property="og:description" content="1、复制数组Java标准库提供的 static 方法 System.arraycopy()，使用该方法复制数组比较方便，并且对所有类型做了重载。">
+<meta property="og:description" content="参考博文：https:&#x2F;&#x2F;blog.csdn.net&#x2F;qq_42370146&#x2F;article&#x2F;details&#x2F;84842168?utm_source&#x3D;app 过年实在是无聊，就试着学学用Java做做界面，最大的收获就是了解使用.css文件美化界面，虽然美化过后还是丑，但是进步一点是一点吧。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-01-26T04:50:16.787Z">
-<meta property="article:modified_time" content="2020-01-26T04:49:46.980Z">
+<meta property="og:image" content="https://github.com/MisterTian8980/PictureOfMyHexoBlog/raw/master/%E6%8B%BC%E5%9B%BE%E6%B8%B8%E6%88%8F/img1.png">
+<meta property="og:image" content="https://github.com/MisterTian8980/PictureOfMyHexoBlog/raw/master/%E6%8B%BC%E5%9B%BE%E6%B8%B8%E6%88%8F/img2.png">
+<meta property="og:image" content="https://github.com/MisterTian8980/PictureOfMyHexoBlog/raw/master/%E6%8B%BC%E5%9B%BE%E6%B8%B8%E6%88%8F/img3.png">
+<meta property="og:image" content="https://github.com/MisterTian8980/PictureOfMyHexoBlog/raw/master/%E6%8B%BC%E5%9B%BE%E6%B8%B8%E6%88%8F/img4.png">
+<meta property="article:published_time" content="2020-01-31T05:40:54.569Z">
+<meta property="article:modified_time" content="2020-01-31T05:43:17.714Z">
 <meta property="article:author" content="MisterTian">
-<meta property="article:tag" content="Java">
-<meta property="article:tag" content="Arrays">
-<meta property="article:tag" content="数组">
-<meta property="article:tag" content="基础知识">
+<meta property="article:tag" content="JavaFX">
+<meta property="article:tag" content="拼图游戏">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/MisterTian8980/PictureOfMyHexoBlog/raw/master/%E6%8B%BC%E5%9B%BE%E6%B8%B8%E6%88%8F/img1.png">
   
     <link rel="alternative" href="/atom.xml" title="Personal blog of MisterTian" type="application/atom+xml">
   
@@ -136,141 +139,592 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-有关Arrays方面的实用功能" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-拼图小游戏" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      有关Arrays方面的实用功能
+      不忍直视的辣鸡游戏
     </h1>
   
 
         
-        <a href="/2020/01/26/%E6%9C%89%E5%85%B3Arrays%E6%96%B9%E9%9D%A2%E7%9A%84%E5%AE%9E%E7%94%A8%E5%8A%9F%E8%83%BD/" class="archive-article-date">
-  	<time datetime="2020-01-26T04:50:16.787Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-26</time>
+        <a href="/2020/01/31/%E6%8B%BC%E5%9B%BE%E5%B0%8F%E6%B8%B8%E6%88%8F/" class="archive-article-date">
+  	<time datetime="2020-01-31T05:40:54.569Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-31</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="1、复制数组"><a href="#1、复制数组" class="headerlink" title="1、复制数组"></a>1、复制数组</h3><p>Java标准库提供的 static 方法 <code>System.arraycopy()</code>，使用该方法复制数组比较方便，并且对所有类型做了重载。</p>
-<a id="more"></a>
-<pre><code>void arraycopy(Object src,  int  srcPos, Object dest, int destPos, int length);</code></pre><p>其中 <code>src</code>表示需要复制的数组，<code>srcPos</code>表示源数组进行开始复制的下标，<code>dest</code>表示复制内容到哪里去的数组，即目标数组，<code>destPos</code>表示复制到数组的哪个下标位置，<code>length</code>表示复制的元素个数。</p>
-<p><strong>代码示例</strong></p>
+        <p>参考博文：<a href="https://blog.csdn.net/qq_42370146/article/details/84842168?utm_source=app" target="_blank" rel="noopener">https://blog.csdn.net/qq_42370146/article/details/84842168?utm_source=app</a></p>
+<p>过年实在是无聊，就试着学学用Java做做界面，最大的收获就是了解使用<code>.css</code>文件美化界面，虽然美化过后还是丑，但是进步一点是一点吧。<a id="more"></a></p>
+<p>无聊嘛，自然就是要做无聊的事情。于是想到了写个拼图小游戏消磨时间。鉴于自身的能力限制，成品与需求相差有点大，我也不准备继续写下去，还是要多多学习基础才是正事，以后要是能力达到了，可能会继续完善一下。</p>
+<p>故撰此文，以示纪念。</p>
+<h2 id="首界面制作"><a href="#首界面制作" class="headerlink" title="首界面制作"></a>首界面制作</h2><p>这个界面就很简单了，自己想怎么弄就怎么弄了，美观程度受个人审美影响。我就用我的来做个反面例子吧</p>
+<p>如图<br><img src="https://github.com/MisterTian8980/PictureOfMyHexoBlog/raw/master/%E6%8B%BC%E5%9B%BE%E6%B8%B8%E6%88%8F/img1.png" alt=""></p>
+<p>布局是使用两个HBox，一个存放<code>进入游戏</code>按钮，一个存放底部标签，然后再放入一个VBox，设置一下内边距之类的参数就可以了。（限于审美，就只讲布局，美化略过）。代码中的有些按钮是没有添加上去的，主要是不想花过多时间。</p>
+<p><strong>参考代码</strong></p>
 <pre>
-import java.util.Arrays;
+package Game;
 
-public class CopyArrays {
-    public static void main(String[] args) {
-        int[] a1 = {1,2,3,4,5};
-        int[] a2 = {6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
-        System.out.println("a1 :" + Arrays.toString(a1));
-        System.out.println("a2 :" + Arrays.toString(a2));
-        System.arraycopy(a2,0,a1,0,a1.length);//数组a1的元素发生改变
-        System.arraycopy(a1,3,a2,1,2);//数组a2的元素发生改变
-        System.out.println("改变后的a1 :" + Arrays.toString(a1));
-        System.out.println("改变后的a2 :" + Arrays.toString(a2));
+import javafx.application.Application;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.layout.*;
+import javafx.stage.Stage;
+import java.net.MalformedURLException;
+import java.net.URL;
+
+/*
+ * 首界面
+ * */
+public class Start_Interface extends Application {
+    public void start(Stage mainStage) throws MalformedURLException {
+
+        Button button_easy = new Button("进入游戏");
+        button_easy.setPrefSize(150,50);
+        Button button_hard = new Button("困难");
+        button_hard.setPrefSize(100, 50);
+        Button button_hardest = new Button("非常困难");
+        button_hardest.setPrefSize(120, 50);
+        Label label = new Label("@田氏出品，必属差品！");
+
+        HBox hBox1 = new HBox();//存放按钮
+        hBox1.setId("hBox1");
+        hBox1.getChildren().addAll(button_easy);
+        hBox1.setPadding(new Insets(650, 350, 0, 325));
+        hBox1.setSpacing(100);//设置按钮之间的距离
+        hBox1.setAlignment(Pos.CENTER);
+
+        HBox hBox2 = new HBox();//存放文本标签
+        hBox2.getChildren().addAll(label);
+        hBox2.setPadding(new Insets(50,0,500,330));
+
+        VBox vBox = new VBox();//存放hBox1、hBox2
+        vBox.getChildren().addAll(hBox1, hBox2);
+
+        Pane pane = new Pane();//存放vBox
+        pane.setId("pane1");
+        pane.setPrefWidth(800);
+        pane.setPrefHeight(800);
+        pane.getChildren().add(vBox);
+        /*简单游戏难度*/
+        button_easy.setOnAction(event -> {
+            Game_easy game_easy = new Game_easy();
+            game_easy.start(mainStage);
+
+        });
+
+        /*困难游戏难度*/
+        button_hard.setOnAction(event -> {
+
+        });
+        /*特别困难游戏难度*/
+        button_hardest.setOnAction(event -> {
+
+        });
+
+        Scene scene = new Scene(pane, 800, 800);
+        URL url = this.getClass().getClassLoader().getResource("Game/Start_Interface.css");//添加css样式的路径
+        scene.getStylesheets().add(url.toExternalForm());
+        mainStage.setScene(scene);
+        mainStage.setTitle("简易的拼图游戏");
+        mainStage.setResizable(false);
+        mainStage.show();
+    }
+    public static void main(String args[]) {
+        launch(args);
     }
 }
+
 </pre>
 
-<p><strong>输出结果</strong></p>
+<h2 id="拼图界面制作"><a href="#拼图界面制作" class="headerlink" title="拼图界面制作"></a>拼图界面制作</h2><p><strong>布局：</strong></p>
+<p>左侧是一个GridPane,右侧VBox,整体布局HBox。（注释部分是用于调试的）</p>
+<p>界面如图<br><img src="https://github.com/MisterTian8980/PictureOfMyHexoBlog/raw/master/%E6%8B%BC%E5%9B%BE%E6%B8%B8%E6%88%8F/img2.png" alt=""></p>
+<p><strong>参考代码</strong></p>
 <pre>
-a1 :[1, 2, 3, 4, 5]
-a2 :[6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
-改变后的a1 :[6, 7, 8, 9, 10]
-改变后的a2 :[6, 9, 10, 9, 10, 11, 12, 13, 14, 15]
-</pre>
+package Game;
 
-<p>该方法对基本类型数组和对象数组都可以复制，但是如果复制对象数组，那么只是复制了对象的引用，而不是对象本身的拷贝，这是浅复制。另外该方法不会执行自动包装和自动拆包，两个数组必须是具有相同的确切类型。</p>
-<h3 id="2、数组的比较"><a href="#2、数组的比较" class="headerlink" title="2、数组的比较"></a>2、数组的比较</h3><p>数组的相等条件是元素个数必须相等，并且对应位置的元素也相等。</p>
-<p><strong>代码示例</strong></p>
-<pre>
-import java.util.Arrays;
-public class CopyArrays {
-    public static void main(String[] args) {
-        int[] a1 = {1,2,3,4,5};
-        int[] a2 = {1,2,3,4,5};
-        System.out.println(Arrays.equals(a1, a2));
-        a1[0] = 11;
-        System.out.println(Arrays.equals(a1, a2));
-        String[] s1 = new String[3];
-        Arrays.fill(s1,"hi");
-        String[] s2 = {new String("hi"), new String("hi"), new String("hi")};
-        System.out.println(Arrays.equals(s1, s2));
+import javafx.application.Application;
+import javafx.collections.ObservableList;
+import javafx.event.EventHandler;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
+import javafx.geometry.Rectangle2D;
+import javafx.scene.Node;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
+import javafx.scene.input.MouseDragEvent;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+
+
+import java.awt.event.KeyListener;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.*;
+
+
+public class Game_easy extends Application {
+
+    Button bt_return = new Button("返回首页");
+    Button bt_begin = new Button("开始游戏");
+    Button bt_changeView = new Button("更换图片");
+    Button bt_help = new Button("查看原图");
+    Button bt_renew = new Button("复原图片");
+    Button bt_music = new Button("播放音乐");
+    Label lb_step = new Label("当前步数");
+    Label lb_step_text = new Label("0");
+
+    int indexNull = 0;//记录随机空白格的下标
+    int step = 0;//记录当前步数
+    String s = "";//步数的字符表示
+    ImageView[] imageViews = new ImageView[9];//九宫格
+
+    public void start(Stage stage) {
+        init(stage);
     }
-}
-</pre>
+    public void init(Stage stage) throws IllegalArgumentException {
 
-<p><strong>输出结果</strong></p>
-<pre>
-true
-false
-true
-</pre>
+        lb_step.setAlignment(Pos.CENTER);
+        bt_begin.setPrefSize(200,50);
+        bt_changeView.setPrefSize(200,50);
+        bt_help.setPrefSize(200,50);
+        bt_renew.setPrefSize(200,50);
+        bt_music.setPrefSize(200,50);
+        lb_step.setPrefSize(200,50);
+        lb_step.setPrefSize(200,50);
+        bt_return.setPrefSize(200,50);
+        VBox vBox = new VBox();
+        vBox.setId("vBox");
+        vBox.setPrefSize(260, 800);
+        vBox.getChildren().addAll(bt_begin, bt_changeView, bt_help, bt_renew, bt_music, lb_step,lb_step_text,bt_return);
+        vBox.setAlignment(Pos.CENTER);
+        vBox.setSpacing(50);
 
-<p>由s1和s2的比较可知道，数组的相等是基于内容的，通过<code>Object.equals()比较</code>。</p>
-<h3 id="3、数组的排序"><a href="#3、数组的排序" class="headerlink" title="3、数组的排序"></a>3、数组的排序</h3><p>使用内置的排序方法，就可以对任意的基本类型数组排序；也可以对任意的对象数组进行排序，只要该对象实现了<code>Comparable</code>接口或具有相关关联的<code>Comparator</code>。 </p>
-<p>下面的例子对两种基本类型进行排序演示。</p>
-<p><strong>代码示例</strong></p>
-<pre>
-import java.util.Arrays;
-public class CopyArrays {
-    public static void main(String[] args) {
-        int[] a1 = {5, 100, 8, 9, 15, 6, 70, 80};
-        System.out.println("a1 before sort:" + Arrays.toString(a1));
-        Arrays.sort(a1);
-        System.out.println("a1 after sort:" + Arrays.toString(a1));
-        String[] strings = {"YNzbr", "nyGcF", "OWZnT", "eGZMm", "EqUCB"};
-        System.out.println("strings before sort:" + Arrays.toString(strings));
-        Arrays.sort(strings);
-        System.out.println("strings after sort:" + Arrays.toString(strings));
-        Arrays.sort(strings,String.CASE_INSENSITIVE_ORDER);
-        System.out.println("strings after CASE_INSENSITIVE_ORDER sort:" + Arrays.toString(strings));
-    }
-}
 
-</pre>
+        GridPane gridPane = new GridPane();
+        gridPane.setId("gridPane");
+        gridPane.setPrefSize(800,800);
+        gridPane.setHgap(1);
+        gridPane.setVgap(1);
+        gridPane.setAlignment(Pos.CENTER);
+        gridPane.setGridLinesVisible(true);
 
-<p><strong>输出结果</strong></p>
-<pre>
-a1 before sort:[5, 100, 8, 9, 15, 6, 70, 80]
-a1 after sort:[5, 6, 8, 9, 15, 70, 80, 100]
-strings before sort:[YNzbr, nyGcF, OWZnT, eGZMm, EqUCB]
-strings after sort:[EqUCB, OWZnT, YNzbr, eGZMm, nyGcF]
-strings after CASE_INSENSITIVE_ORDER sort:[eGZMm, EqUCB, nyGcF, OWZnT, YNzbr]
-</pre>
+        HBox hBox = new HBox();
+        hBox.setId("hbox");
+        hBox.setSpacing(10);
+        hBox.setPadding(new Insets(10));
+        hBox.setPrefSize(1060, 800);
+        hBox.getChildren().addAll(gridPane, vBox);
 
-<p>注意，<strong>String</strong>的排序算法是依据<strong>词典编排</strong>顺序排序的，所以大写字母开头的词都放在前面输出，然后才是小写字母开头的词。使用参数<code>CASE_INSENSITIVE_ORDER</code>可以忽略大小写。</p>
-<h3 id="4、在已排序的数组中查找"><a href="#4、在已排序的数组中查找" class="headerlink" title="4、在已排序的数组中查找"></a>4、在已排序的数组中查找</h3><p>如果数组已经排好序，就可以使用<code>Arrays.binarySearch()</code>执行快速查找。</p>
-<p><strong>代码示例</strong></p>
-<pre>
-import java.util.Arrays;
-public class CopyArrays {
-    public static void main(String[] args) {
-        int[] a = new int[30];
-        int k = 0;
-        for (int i = 0; i < 30; i++) {
-            k = i*5+2;
-            a[i] = k;
+//        Pane pane_time = new Pane();
+//        pane_time.setId("pane_time");
+//        Label lb_time = new Label("剩余时间");
+//        pane_time.setPrefSize(1026, 50);
+//        pane_time.getChildren().addAll(lb_time);
+
+        VBox vBox_total = new VBox();
+        vBox_total.setAlignment(Pos.CENTER);
+        vBox_total.setPrefSize(1026, 870);
+        vBox_total.getChildren().addAll(hBox);
+        vBox_total.setSpacing(10);
+
+        Image image2 = new Image("./Game/img2.png");
+        for (int i = 0; i < 9; i++) {
+            imageViews[i] = new ImageView(image2);//初始化数组
         }
-        System.out.println(Arrays.toString(a));
-        int index = Arrays.binarySearch(a,112);
-        System.out.println("Index of 122 is " + index);
+        //切割图片分给数组
+        for (int i = 0, k = 0; i <= 2; i++) {
+            for (int j = 0; j <= 2; j++, k++) {
+                imageViews[k].setViewport(new Rectangle2D(266*j,266*i,266,266));
+            }
+        }
+
+        //打乱图片排列顺序
+        int[] a = randNum_Is_Du();//这个数组的元素就是图片数组中对应图片的下标
+        indexNull = find(a);//这个下标的图片需要改为空白图片
+//        System.out.println("空白图片下标"+indexNull);
+        int imgViewindex = 0;
+        gridPane.add(imageViews[a[0]], 0, 0);
+        gridPane.add(imageViews[a[1]], 1, 0);
+        gridPane.add(imageViews[a[2]], 2, 0);
+        gridPane.add(imageViews[a[3]], 0, 1);
+        gridPane.add(imageViews[a[4]], 1, 1);
+        gridPane.add(imageViews[a[5]], 2, 1);
+        gridPane.add(imageViews[a[6]], 0, 2);
+        gridPane.add(imageViews[a[7]], 1, 2);
+        //填充空白
+        Image imgNull = new Image("./Game/imgNull.png");
+        ImageView imageViewNull = new ImageView(imgNull);
+        imageViewNull.setFitHeight(266);
+        imageViewNull.setFitWidth(266);
+        imageViews[indexNull] = imageViewNull;//这样赋值可以解决出现空白的情况
+        gridPane.add(imageViews[indexNull],2,2);
+
+
+        //开始游戏
+        bt_begin.setOnAction(event -> {
+            for (int i = 0; i < imageViews.length; i++) {
+                imageViews[i].setOnMouseClicked(new myevent());
+            }
+        });
+
+        //播放音乐
+        bt_music.setOnAction(event -> {
+           Music music1 = new Music();
+           music1.init(new Stage());
+        });
+
+//        bt_renew.setOnAction(event -> {
+//            for (int i = 0; i < imageViews.length; i++) {
+//                imageViews[i].setOnMouseClicked(new NullEvent());
+//            }
+//        });
+
+        //查看原图
+        bt_help.setOnAction(event -> {
+            View_Original_Image original_image = new View_Original_Image();
+            original_image.start(new Stage());
+        });
+
+        //返回首页
+        bt_return.setOnAction(event -> {
+            Start_Interface start_interface = new Start_Interface();
+            try {
+                start_interface.start(stage);
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            }
+        });
+
+        Scene scene_game_easy = new Scene(vBox_total,1060,870);
+        URL url = this.getClass().getClassLoader().getResource("Game/Game_easy.css");//添加css样式的路径
+        scene_game_easy.getStylesheets().add(url.toExternalForm());
+        stage.setScene(scene_game_easy);
+        stage.show();
+    }
+    //鼠标点击事件的实现
+    class myevent implements EventHandler<MouseEvent> {
+        public void handle(MouseEvent mouseEvent) {
+            ImageView img = (ImageView) mouseEvent.getSource();
+            double x = img.getLayoutX();
+            double y = img.getLayoutY();
+            double dx = (x - imageViews[indexNull].getLayoutX());
+            double dy = (y - imageViews[indexNull].getLayoutY());
+//            System.out.println("dx: "+dx);
+//            System.out.println("dy: "+dy);
+            if ((dx == 0) && (dy == -267)) {//点击的是空白格子的上面
+
+                step++;//步数加1
+                s = String.valueOf(step);
+                lb_step_text.setText(s);
+                swap(img, imageViews[indexNull]);
+//                System.out.println("点击上面");
+                if (isOK(imageViews)) {
+                    Game_Win game_win = new Game_Win();
+                    game_win.start(new Stage());
+                }
+            } else if ((dx == 0) && (dy == 267)) {//点击的是空白各自的下面
+
+                step++;//步数加1
+                s = String.valueOf(step);
+                lb_step_text.setText(s);
+                swap(img, imageViews[indexNull]);
+//                System.out.println("点击下面");
+                if (isOK(imageViews)) {
+                    Game_Win game_win = new Game_Win();
+                    game_win.start(new Stage());
+                }
+            } else if ((dx == -267.0) && (dy == 0.0)) {//点击的是在空白各自的左边
+
+                step++;//步数加1
+                s = String.valueOf(step);
+                lb_step_text.setText(s);
+                swap(img, imageViews[indexNull]);
+//                System.out.println("点击左面");
+                if (isOK(imageViews)) {
+                    Game_Win game_win = new Game_Win();
+                    game_win.start(new Stage());
+                }
+            } else if ((dx == 267) && (dy == 0)) {//点击的是在空白各自的右边
+
+                step++;//步数加1
+                s = String.valueOf(step);
+                lb_step_text.setText(s);
+                swap(img, imageViews[indexNull]);
+//                System.out.println("点击右面");
+                if (isOK(imageViews)) {
+                    Game_Win game_win = new Game_Win();
+                    game_win.start(new Stage());
+                }
+            }
+        }
+    }
+
+    //空的鼠标单击事件
+    class NullEvent implements EventHandler<MouseEvent> {
+        @Override
+        public void handle(MouseEvent event) {
+
+        }
+    }
+
+    //随机生成一组逆序数为偶数的序列，返回8个数
+    public int[] randNum_Is_Du() {
+        int [] a = new int[8];
+        while (!isDu(a)) {
+            a = randNum();
+        }
+        return a;
+    }
+
+    //利用随机数产生8个0-8中不重复的数
+    public int[] randNum() {
+        int a[] = new int[8];//作为返回值
+        Random random = new Random();
+        for (int i = 0; i < 8; i++) {
+            a[i] = random.nextInt(9);//只产生0-8中的9个数
+            for (int j = 0; j < i; j++) {
+                if (a[j] == a[i]) {
+                    i--;
+                    break;
+                }
+            }
+        }
+        return a;
+    }
+
+    //判断一组数的逆序数是否为偶数
+    public boolean isDu(int[] a) {
+        int sum = 0;
+        for (int i = 0; i < a.length-1; i++) {
+            for (int j = i+1; j < a.length; j++) {
+                if (a[i] > a[j]) {
+                    sum++;
+                }
+
+            }
+        }
+//        System.out.println("逆序数为:"+sum);
+        if (sum % 2 == 0 && sum != 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    //找出0-8中未出现的数，作为空白格子的下标
+    /*当这个数为8时，程序出错*/
+    public int find(int[] a) {
+        boolean flag = true;
+        for (int i = 0; i < a.length; i++) {
+            flag = (i == a[0])||(i == a[1])||(i == a[2])||(i == a[3])||
+                    (i == a[4])||(i == a[5])||(i == a[6])||(i == a[7]);
+            if (!flag) {
+                return i;
+            }
+        }
+        return 8;//针对的是3*3
+    }
+
+    //交换两个图片
+    public void swap(ImageView img1, ImageView img2) {
+        int r1 = GridPane.getRowIndex(img1);
+        int c1 = GridPane.getColumnIndex(img1);
+        int r2 = GridPane.getRowIndex(img2);
+        int c2 = GridPane.getColumnIndex(img2);
+        GridPane.setRowIndex(img1,r2);
+        GridPane.setColumnIndex(img1, c2);
+        GridPane.setRowIndex(img2, r1);
+        GridPane.setColumnIndex(img2, c1);
+    }
+
+    //判断是否拼图成功
+    public boolean isOK(ImageView[] imageViews) {
+        for (int i = 0; i < 9; i++) {
+            if (i != 3*GridPane.getRowIndex(imageViews[i]) + GridPane.getColumnIndex(imageViews[i])) {
+                return false;
+            }
+        }
+        for (int i = 0; i < imageViews.length; i++) {//解除图片的鼠标事件，图片无法交换
+                imageViews[i].setOnMouseClicked(new NullEvent());
+            }
+        return true;
     }
 }
+
+
 </pre>
 
-<p><strong>输出结果</strong></p>
+<h2 id="查看原图界面"><a href="#查看原图界面" class="headerlink" title="查看原图界面"></a>查看原图界面</h2><p>如图<br><img src="https://github.com/MisterTian8980/PictureOfMyHexoBlog/raw/master/%E6%8B%BC%E5%9B%BE%E6%B8%B8%E6%88%8F/img3.png" alt=""></p>
+<p><strong>参考代码</strong></p>
 <pre>
-[2, 7, 12, 17, 22, 27, 32, 37, 42, 47, 52, 57, 62, 67, 72, 77, 82, 87, 92, 97, 102, 107, 112, 117, 122, 127, 132, 137, 142, 147]
-Index of 122 is 22
+package Game;
+/*
+* 用于查看原图，点击“查看原图”按钮触发该事件
+* */
+import javafx.application.Application;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+
+import java.net.URL;
+
+
+public class View_Original_Image extends Application {
+    public void init(Stage stage) {
+        start(stage);
+    }
+
+    public void start(Stage stage) {
+        Button bt_continue = new Button("继续游戏");
+
+        Pane pane_Img = new Pane();//显示图片的面板
+        pane_Img.setId("pane_Img");
+        pane_Img.setPrefSize(600, 600);//图片统一显示为600*600
+        ImageView originalImg = new ImageView("./Game/img2.png");
+        originalImg.setFitWidth(600);
+        originalImg.setFitHeight(600);
+        pane_Img.getChildren().addAll(originalImg);
+
+        HBox hBox_bt = new HBox();//显示按钮的面板
+        hBox_bt.setId("hBox_bt");
+        hBox_bt.getChildren().addAll(bt_continue);
+        hBox_bt.setAlignment(Pos.CENTER);
+
+        VBox vBox = new VBox();//父面板
+        vBox.setPrefSize(600,650);//图片占600高，按钮50
+        vBox.setSpacing(10);//距离10
+        vBox.getChildren().addAll(pane_Img, hBox_bt);
+        vBox.setPadding(new Insets(10,0,10,10));//内边距10
+
+
+        //继续游戏按钮事件
+        bt_continue.setOnAction(event -> {
+            stage.close();
+        });
+
+        Scene scene = new Scene(vBox,610,650);
+        URL url = this.getClass().getClassLoader().getResource("Game/View_Original_Image.css");//添加css样式的路径
+        scene.getStylesheets().add(url.toExternalForm());
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
+    }
+}
+
 </pre>
 
-<p>如果找到了目标值，<code>Arrays.binarySearch()</code>产生的返回值就是在数组中的下标值，否则，返回的就是负值。如果数组包含重复的元素，，则无法保证找到的是这些相同值中的哪一个。虽然仍然可以用，但是不建议用。如果需要对没有重复元素的数组进行排序，可以选择使用<code>TreeSet</code>。</p>
+<h2 id="拼图成功提示界面"><a href="#拼图成功提示界面" class="headerlink" title="拼图成功提示界面"></a>拼图成功提示界面</h2><p>如图<br><img src="https://github.com/MisterTian8980/PictureOfMyHexoBlog/raw/master/%E6%8B%BC%E5%9B%BE%E6%B8%B8%E6%88%8F/img4.png" alt=""></p>
+<p><strong>参考代码</strong></p>
+<pre>
+package Game;
+
+import javafx.application.Application;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+import java.net.URL;
+
+
+public class Game_Win extends Application {
+    public void init(Stage stage) {
+        start(stage);
+    }
+
+    public void start(Stage stage) {
+        Label label1 = new Label("恭喜你拼图成功！");
+        VBox vBox = new VBox();
+        vBox.setId("vBox");
+//        vBox.setPadding(new Insets(10));
+        vBox.setSpacing(10);
+        vBox.getChildren().addAll(label1);
+        vBox.setAlignment(Pos.CENTER);
+        Scene scene = new Scene(vBox,400,150);
+        URL url = this.getClass().getClassLoader().getResource("Game/Game_Win.css");//添加css样式的路径
+        scene.getStylesheets().add(url.toExternalForm());
+        stage.setScene(scene);
+        stage.show();
+    }
+}
+
+</pre>
+
+
+<h2 id="音乐播放实现"><a href="#音乐播放实现" class="headerlink" title="音乐播放实现"></a>音乐播放实现</h2><p>布局省略</p>
+<p><strong>参考代码</strong></p>
+<pre>
+package Game;
+
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.layout.VBox;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
+import javafx.stage.Stage;
+
+public class Music extends Application {
+    public void init(Stage stage) {
+        start(stage);
+    }
+    public void start(Stage stage) {
+
+        Button button = new Button("播放");
+        Button button1 = new Button("暂停");
+        VBox vBox = new VBox();
+        vBox.setSpacing(10);
+        vBox.getChildren().addAll(button, button1);
+
+        String s1 = Music.class.getResource("./Twinbed - Trouble I'm In.mp3").toString();
+        Media media = new Media(s1);
+        MediaPlayer mediaPlayer = new MediaPlayer(media);
+
+        button.setOnAction(event -> {
+            mediaPlayer.play();
+        });
+        button1.setOnAction(event -> {
+            mediaPlayer.pause();
+        });
+        Scene scene = new Scene(vBox);
+        stage.setScene(scene);
+        stage.show();
+    }
+}
+
+</pre>
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>虽然程序简陋，但是也是自己一行行写下来的，只要能学到之前不会的知识就不算浪费时间。</p>
+<p>本来想写下拼图复原的算法，但是好像自己能力还不够，以后争取写下。（哈哈）</p>
+<p>每天进步一点点。</p>
 
       
 
@@ -310,19 +764,11 @@ Index of 122 is 22
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">JavaFX</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Arrays</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数组</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">基础知识</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">拼图游戏</a>
         		</li>
       		
 		</ul>
@@ -378,7 +824,7 @@ Index of 122 is 22
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/01/26/%E6%9C%89%E5%85%B3Arrays%E6%96%B9%E9%9D%A2%E7%9A%84%E5%AE%9E%E7%94%A8%E5%8A%9F%E8%83%BD/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/01/31/%E6%8B%BC%E5%9B%BE%E5%B0%8F%E6%B8%B8%E6%88%8F/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -392,18 +838,9 @@ Index of 122 is 22
   
 <nav id="article-nav">
   
-    <a href="/2020/01/31/%E6%8B%BC%E5%9B%BE%E5%B0%8F%E6%B8%B8%E6%88%8F/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          不忍直视的辣鸡游戏
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/01/25/PAT-1009%20%E8%AF%B4%E5%8F%8D%E8%AF%9D/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">PAT-1009 说反话</div>
+    <a href="/2020/01/26/%E6%9C%89%E5%85%B3Arrays%E6%96%B9%E9%9D%A2%E7%9A%84%E5%AE%9E%E7%94%A8%E5%8A%9F%E8%83%BD/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">有关Arrays方面的实用功能</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -430,7 +867,7 @@ Index of 122 is 22
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、复制数组"><span class="toc-number">1.</span> <span class="toc-text">1、复制数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、数组的比较"><span class="toc-number">2.</span> <span class="toc-text">2、数组的比较</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3、数组的排序"><span class="toc-number">3.</span> <span class="toc-text">3、数组的排序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4、在已排序的数组中查找"><span class="toc-number">4.</span> <span class="toc-text">4、在已排序的数组中查找</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#首界面制作"><span class="toc-number">1.</span> <span class="toc-text">首界面制作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#拼图界面制作"><span class="toc-number">2.</span> <span class="toc-text">拼图界面制作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查看原图界面"><span class="toc-number">3.</span> <span class="toc-text">查看原图界面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#拼图成功提示界面"><span class="toc-number">4.</span> <span class="toc-text">拼图成功提示界面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#音乐播放实现"><span class="toc-number">5.</span> <span class="toc-text">音乐播放实现</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#总结"><span class="toc-number">6.</span> <span class="toc-text">总结</span></a></li></ol>
                     </div>
                 </span>
             </div>
