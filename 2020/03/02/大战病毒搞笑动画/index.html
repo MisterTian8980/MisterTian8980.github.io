@@ -6,14 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: 访问统计 | Personal blog of MisterTian</title>
+  <title>编码贺新年 | Personal blog of MisterTian</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Personal blog of MisterTian">
-<meta property="og:url" content="http://yoursite.com/tags/%E8%AE%BF%E9%97%AE%E7%BB%9F%E8%AE%A1/index.html">
+  <meta name="description" content="参考视频：https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;av84788338 突然在B站看到一个赶年兽，除病毒的搞笑视频动画，我觉得还挺好的，所以用代码实现了部分。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="编码贺新年">
+<meta property="og:url" content="http://yoursite.com/2020/03/02/%E5%A4%A7%E6%88%98%E7%97%85%E6%AF%92%E6%90%9E%E7%AC%91%E5%8A%A8%E7%94%BB/index.html">
 <meta property="og:site_name" content="Personal blog of MisterTian">
+<meta property="og:description" content="参考视频：https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;av84788338 突然在B站看到一个赶年兽，除病毒的搞笑视频动画，我觉得还挺好的，所以用代码实现了部分。">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-03-02T08:09:20.129Z">
+<meta property="article:modified_time" content="2020-03-02T08:08:49.740Z">
 <meta property="article:author" content="MisterTian">
+<meta property="article:tag" content="Javafx">
+<meta property="article:tag" content="GUI">
+<meta property="article:tag" content="动画编程">
+<meta property="article:tag" content="冠状病毒">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Personal blog of MisterTian" type="application/atom+xml">
@@ -128,68 +136,490 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-大战病毒搞笑动画" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/01/20/Hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AE%BF%E9%97%AE%E7%BB%9F%E8%AE%A1/" class="archive-article-date">
-  	<time datetime="2020-01-20T09:52:03.701Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-20</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/01/20/Hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AE%BF%E9%97%AE%E7%BB%9F%E8%AE%A1/">Hexo博客添加网站访问量统计</a>
+    <h1 class="article-title" itemprop="name">
+      编码贺新年
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2020/03/02/%E5%A4%A7%E6%88%98%E7%97%85%E6%AF%92%E6%90%9E%E7%AC%91%E5%8A%A8%E7%94%BB/" class="archive-article-date">
+  	<time datetime="2020-03-02T08:09:20.129Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-02</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>参考视频：<a href="https://www.bilibili.com/video/av84788338" target="_blank" rel="noopener">https://www.bilibili.com/video/av84788338</a></p>
+<p>突然在B站看到一个赶年兽，除病毒的搞笑视频动画，我觉得还挺好的，所以用代码实现了部分。</p>
+<a id="more"></a>
+<p>由于目前只接触Javafx这一门GUI编程语言，加之还不太熟练使用，做出来的效果不是太好。</p>
+<p>整个程序涉及的主要知识是时间线动画、位移动画、旋转动画、透明度动画、媒体类以及线程。</p>
+<p>爆炸效果是运用的多张图片，以一个单独的线程运行它，调节他的休眠时间就可以达到比较好的爆炸效果了。</p>
+<p><strong>特别注意：</strong></p>
+<p>在使用媒体类播放音乐时，最好把MediaPlayer对象作为成员变量或者静态变量，这样就不会出现音乐播放几秒后就中断的情况。</p>
+<p><strong>程序运行结果</strong></p>
+<p><a href="https://github.com/MisterTian8980/PictureOfMyHexoBlog/blob/master/搞笑动画之冠状病毒/运行结果.mp4" target="_blank" rel="noopener">https://github.com/MisterTian8980/PictureOfMyHexoBlog/blob/master/搞笑动画之冠状病毒/运行结果.mp4</a></p>
+<p><strong>程序所需资源见仓库</strong></p>
+<p><a href="https://github.com/MisterTian8980/PictureOfMyHexoBlog/tree/master/搞笑动画之冠状病毒" target="_blank" rel="noopener">https://github.com/MisterTian8980/PictureOfMyHexoBlog/tree/master/搞笑动画之冠状病毒</a></p>
+<p><strong>源代码</strong></p>
+<pre>
+package NewYear;
+
+import javafx.animation.*;
+import javafx.application.Application;
+import javafx.application.Platform;
+import javafx.scene.Node;
+import javafx.scene.Scene;
+import javafx.scene.SceneAntialiasing;
+import javafx.scene.SubScene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.Pane;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
+import javafx.stage.Stage;
+import javafx.util.Duration;
+
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.Random;
+import java.util.function.Consumer;
+
+/**
+ * @Auther: 戏中人
+ * @Date: 2020/2/22 14:08
+ * @Description:大战病毒
+ */
+public class NewYear extends Application {
+    String s_end = NewYear.class.getResource("/NewYear/中国交响乐团 - 春节序曲.mp3").toString();
+    Media media_end = new Media(s_end);
+    MediaPlayer mediaPlayer_end = new MediaPlayer(media_end);
+
+    String s1 = NewYear.class.getResource("/NewYear/boom2.wav").toString();
+    String s2 = NewYear.class.getResource("/NewYear/liang_2.mp3").toString();
+    String s3 = NewYear.class.getResource("/NewYear/move2.m4a").toString();
+    Media media1 = new Media(s1);
+    Media media2 = new Media(s2);
+    Media media3 = new Media(s3);
+    MediaPlayer mediaPlayer ;
+    MediaPlayer mediaPlayer_shoot = new MediaPlayer(media2);
+
+    Timeline timeline_bingdu = new Timeline();      //左边病毒出场
+    Timeline timeline_Akfunny = new Timeline();     //右边角色出场
+    Timeline tl = new Timeline();//控制右边角色攻击病毒时左右移动
+    Timeline timeline_end = new Timeline();
+    ArrayList<ParallelTransition> Pt_list = new ArrayList<>();//并行动画链表
+
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+
+        Pane root = new Pane();
+        root.setPrefSize(1000,550);
+        root.setId("root");
+
+        Node node = view(primaryStage);
+        root.getChildren().addAll(node);
+
+        Scene scene = new Scene(root,1000,550);
+        URL url = this.getClass().getClassLoader().getResource("NewYear/NewYear.css");//添加css样式的路径
+        scene.getStylesheets().add(url.toExternalForm());
+        primaryStage.setScene(scene);
+        primaryStage.setResizable(false);
+        primaryStage.setTitle("新年快乐");
+        primaryStage.show();
+    }
+
+    public Node view(Stage stage) {
+
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println(111);
+            }
+        });
+
+        Random random = new Random();       //随机时间点
+        Pane pane1 = new Pane();        //存放爆炸效果
+        Pane pane2 = new Pane();        //存放左边角色
+        Pane pane3 = new Pane();        //存放右边角色
+        Button bt = new Button("开启新年好运");
+        bt.setPrefSize(200,60);
+        bt.setLayoutX(400);
+        bt.setLayoutY(480);
+        /*结束*/
+        Label label = new Label("祝大家鼠年吉祥");
+        label.setLayoutX(-280);
+        label.setLayoutY(190);
+        Label label1 = new Label("身体健康，万事如意");
+        label1.setLayoutX(-400);
+        label1.setLayoutY(260);
+        Label label2 = new Label("PS：勤洗手、少扎堆、戴口罩");
+        label2.setId("PS");
+        label2.setLayoutX(-345);
+        label2.setLayoutY(330);
+        KeyValue kv11 = new KeyValue(label.translateXProperty(),0);
+        KeyValue kv22 = new KeyValue(label1.translateXProperty(),0);
+        KeyValue kv33 = new KeyValue(label2.translateXProperty(),0);
+        KeyFrame keyFrame = new KeyFrame(Duration.seconds(0),kv11,kv22,kv33);
+        KeyValue kv44 = new KeyValue(label.translateXProperty(),400);
+        KeyValue kv55 = new KeyValue(label1.translateXProperty(),480);
+        KeyValue kv66 = new KeyValue(label2.translateXProperty(),435);
+        KeyFrame keyFrame2 = new KeyFrame(Duration.seconds(3),kv44,kv55,kv66);
+        timeline_end.getKeyFrames().addAll(keyFrame, keyFrame2);
+
+        Image[] images = new Image[16];
+        images[1] = new Image("NewYear/explode/e1.gif");
+        images[2] = new Image("NewYear/explode/e2.gif");
+        images[3] = new Image("NewYear/explode/e3.gif");
+        images[4] = new Image("NewYear/explode/e4.gif");
+        images[5] = new Image("NewYear/explode/e5.gif");
+        images[6] = new Image("NewYear/explode/e6.gif");
+        images[7] = new Image("NewYear/explode/e7.gif");
+        images[8] = new Image("NewYear/explode/e8.gif");
+        images[9] = new Image("NewYear/explode/e9.gif");
+        images[10] = new Image("NewYear/explode/e10.gif");
+        images[11] = new Image("NewYear/explode/e11.gif");
+        images[12] = new Image("NewYear/explode/e12.gif");
+        images[13] = new Image("NewYear/explode/e13.gif");
+        images[14] = new Image("NewYear/explode/e14.gif");
+        images[15] = new Image("NewYear/explode/e15.gif");
+
+        Image img1 = new Image("NewYear/imgs/bingdu.png");
+        ImageView iv1 = new ImageView(img1);
+        iv1.setFitHeight(300);
+        iv1.setLayoutX(-200);       //左边病毒初始位置
+        iv1.setLayoutY(180);
+        iv1.setPreserveRatio(true);
+//        Image img2 = new Image("NewYear/imgs/AKFunny.png");
+        Image img2 = new Image("NewYear/imgs/Funny2.png");
+        ImageView iv2 = new ImageView(img2);
+        iv2.setFitHeight(200);
+        iv2.setLayoutX(1200);        //右边角色初始位置
+        iv2.setLayoutY(250);
+        iv2.setPreserveRatio(true);
+        pane2.getChildren().addAll(iv1);
+        pane3.getChildren().addAll(iv2,label,label1,label2);
+
+        int location_x,location_y;      //菜刀的坐标
+        ArrayList<ImageView> list = new ArrayList<>();
+        for (int i = 0; i < 10; i++) {
+            ImageView iv = new ImageView("NewYear/imgs/caidao.png");
+            location_x = 800;
+            location_y = 320;
+            iv.setFitHeight(50);
+            iv.setPreserveRatio(true);
+            iv.setLayoutX(location_x);
+            iv.setLayoutY(location_y);
+            iv.setOpacity(0);
+            list.add(iv);
+        }
+        pane2.getChildren().addAll(list);       //把菜刀图片添加到面板
+
+        Pane root = new Pane();
+        root.setStyle("-fx-background-color: #ffffff00");
+        root.getChildren().addAll(pane2,pane3,pane1,bt);
+        SubScene subScene = new SubScene(root,1000,550,false, SceneAntialiasing.DISABLED);
+
+        //爆炸效果
+        Thread thread1 = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    for (int i = 1; i < images.length; i++) {
+                        ImageView iv = new ImageView(images[i]);
+                        iv.setFitHeight(350);
+                        iv.setLayoutY(180);
+                        iv.setLayoutX(30);
+                        iv.setPreserveRatio(true);
+                        Platform.runLater(new Runnable() {
+                            @Override
+                            public void run() {
+                                pane1.getChildren().clear();
+                                pane1.getChildren().add(iv);
+                            }
+                        });
+                        Thread.sleep(100);
+                    }
+                    System.out.println(111);
+                    mediaPlayer_end.setVolume(0.1);
+                    mediaPlayer_end.play();
+                    timeline_end.play();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+        //出场
+        bt.setOnAction(event -> {
+            mediaPlayer = new MediaPlayer(media3);
+            mediaPlayer.play();
+            timeline_Akfunny.play();        //右边角色出场
+            root.getChildren().remove(bt);  //移除按钮
+        });
+
+        list.forEach(new Consumer<ImageView>() {
+            @Override
+            public void accept(ImageView view) {
+
+                double time = random.nextDouble()*0.9;
+                TranslateTransition tt = new TranslateTransition(Duration.seconds(time));//位移动画
+                tt.setFromX(view.getTranslateX());
+                tt.setFromY(view.getTranslateY());
+                tt.setByX(-650);//增量
+
+                RotateTransition rt = new RotateTransition(Duration.seconds(time));//旋转动画
+                rt.setFromAngle(0);
+                rt.setToAngle(-360*3);
+
+                FadeTransition ft1 = new FadeTransition(Duration.seconds(time/2));//透明度动画
+                ft1.setFromValue(0);
+                ft1.setToValue(1);
+
+//                FadeTransition ft2 = new FadeTransition(Duration.seconds(time/2));
+//                ft2.setFromValue(1);
+//                ft2.setToValue(0);
+
+                SequentialTransition st = new SequentialTransition();//串行动画
+                st.getChildren().addAll(ft1);
+
+                ParallelTransition pt = new ParallelTransition();//并行动画
+                pt.setNode(view);
+                pt.getChildren().addAll(tt,rt,st);
+                pt.setCycleCount(5);
+                Pt_list.add(pt);
+            }
+        });
+
+        /*控制右边角色左右移动*/
+        KeyValue kv1 = new KeyValue(iv2.translateXProperty(),-430);
+        KeyFrame kf1 = new KeyFrame(Duration.seconds(0), kv1);
+        KeyValue kv2 = new KeyValue(iv2.translateXProperty(),-480);
+        KeyFrame kf2 = new KeyFrame(Duration.seconds(0.7), kv2);
+        tl.getKeyFrames().addAll(kf1, kf2);
+        tl.setAutoReverse(true);
+        tl.setCycleCount(5);
+        //左右移动完病毒爆炸消失
+        tl.setOnFinished(event -> {
+            thread1.start();
+            mediaPlayer = new MediaPlayer(media1);
+            mediaPlayer.play();          //爆炸音效
+            pane2.getChildren().clear();        //清除左边病毒
+        });
+
+        /*右边出场*/
+        KeyValue kv1_Akfunny = new KeyValue(iv2.translateXProperty(), 0);
+        KeyFrame kf1_Akfunny = new KeyFrame(Duration.seconds(0), kv1_Akfunny);
+        KeyValue kv2_Akfunny = new KeyValue(iv2.translateXProperty(),-450);
+        KeyFrame kf2_Akfunny = new KeyFrame(Duration.seconds(2),kv2_Akfunny);
+        timeline_Akfunny.getKeyFrames().addAll(kf1_Akfunny, kf2_Akfunny);
+        timeline_Akfunny.setCycleCount(1);
+        timeline_Akfunny.setOnFinished(event -> {
+            mediaPlayer = new MediaPlayer(media3);
+            mediaPlayer.play();
+            timeline_bingdu.play();     //出场结束后接着病毒出场
+        });
+
+        /*病毒出场*/
+        KeyValue kv1_bingdu = new KeyValue(iv1.translateXProperty(), iv1.getTranslateX());
+        KeyFrame kf1_bingdu = new KeyFrame(Duration.seconds(0),kv1_bingdu);
+        KeyValue kv2_bingdu = new KeyValue(iv1.translateXProperty(), 250);
+        KeyFrame kf2_bingdu = new KeyFrame(Duration.seconds(2),kv2_bingdu);
+        timeline_bingdu.getKeyFrames().addAll(kf1_bingdu, kf2_bingdu);
+        timeline_bingdu.setCycleCount(1);
+        timeline_bingdu.setOnFinished(event -> {
+            tl.play();      //出场结束后开始攻击病毒
+            mediaPlayer_shoot.play();
+            /*攻击病毒*/
+            Pt_list.forEach(new Consumer<ParallelTransition>() {
+                @Override
+                public void accept(ParallelTransition parallelTransition) {
+                    parallelTransition.play();
+                }
+            });
+        });
+        return subScene;
+    }
+}
+
+</pre>
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Hexo</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Javafx</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">友盟</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">GUI</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">访问统计</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">动画编程</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">冠状病毒</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/03/02/%E5%A4%A7%E6%88%98%E7%97%85%E6%AF%92%E6%90%9E%E7%AC%91%E5%8A%A8%E7%94%BB/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2020/02/07/%E9%A3%98%E8%90%BD%E5%8A%A8%E7%94%BB/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Javafx制作飘落动画</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    目录，不存在的…
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -213,9 +643,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: true,
 		toc_hide_index: true,
